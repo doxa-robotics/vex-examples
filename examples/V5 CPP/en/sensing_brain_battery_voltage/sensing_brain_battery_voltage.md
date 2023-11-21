@@ -1,0 +1,25 @@
+category: sensing  
+signature: Brain.Battery.voltage()  
+description: Reports the voltage of the V5 Brain's battery.  
+
+# Brain Battery Voltage
+
+Reports the voltage of the V5 Brain's battery.
+
+```cpp
+Brain.Battery.voltage()
+```
+
+## How To Use
+Commands that return a value are normally used inside of other statements (such as print statements) or inside of control structures (such as while loops) and do not use a semicolon.
+
+`Brain.Battery.voltage()` returns a decimal value (as a *double*) that reports the voltage of the V5 Brain's battery. 
+
+The default unit is `volt`, and the command will return a value in the range of **10 volts to 14.4 volts**.
+
+```cpp
+Brain.Screen.print("%f", Brain.Battery.voltage());
+```
+
+<advanced>
+</advanced>
